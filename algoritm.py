@@ -87,3 +87,27 @@ def rec_sum(arr):
 # call_func(test_data, rec_sum)
 
 # стр. 96 задача 1 (функция для суммы значений в списке)
+
+#  бинарный поиск
+@log_execution_time
+def binary_search(arr, item):
+    low = 0
+    high = len(arr) - 1
+    test = selectionsort(arr)
+    print(arr)
+    print(test)
+
+    while low <= high:
+        mid = (low + high) // 2
+        guess = arr[mid]
+        if guess == item:
+            return print(mid)
+        elif guess > item:
+            high = mid-1
+        else:
+            low = mid+1
+    return None
+
+
+test_data = [5, 8, 9, 4, 45, 2, 12, 22, 33, 1, 5, 200]
+binary_search(test_data, 5)
