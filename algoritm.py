@@ -87,3 +87,19 @@ def rec_sum(arr):
 # call_func(test_data, rec_sum)
 
 # стр. 96 задача 1 (функция для суммы значений в списке)
+
+# проверяю кк назначаются переменные в python
+test = [1, 2]
+tset2 = test
+test.append(3)
+print(test)
+print(tset2)
+tset2.append(4)
+print(test)
+print(tset2)
+
+str_test = "test"
+str_test2 = str_test
+str_test += "1"
+print(str_test)
+print(str_test2)
