@@ -4,7 +4,7 @@ def quick_sort(arr):
     else:
         less = []
         more = []
-        mid = arr[0]  # бере произвольное число из массива как опорное
+        mid = arr[0]  # берем произвольное число из массива как опорное
         for i in arr[1:]:
             if i <= mid:
                 less.append(i)
